@@ -21,10 +21,10 @@ def generate_pdf(request):
 
 def send_test_email(request):
     send_mail(
-        'Subject here',
-        'Here is the message.',
-        'from@example.com',
-        ['to@example.com'],
+        'Prueba de asunto',
+        'Este es el mensaje de prueba.',
+        'edqm_04@hotmail.com',  
+        ['equispemar@unsa.edu.pe'],  
         fail_silently=False,
     )
-    return render(request, 'email_sent.html')
+    return HttpResponse("Correo enviado correctamente.")
